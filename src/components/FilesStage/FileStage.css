@@ -1,0 +1,40 @@
+.files{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.file{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 2em;
+}
+.selected{
+    padding: 1em;
+    border-radius: 25%;
+    background-color: rgba(0, 255, 255, 0.299);
+}
+.file input{
+    text-align: center;
+    background: transparent;
+    border: 0;
+
+}
+.file:hover{
+    cursor: pointer;
+}
+.file input:focus , .file input:active{
+    text-align: center;
+    background: transparent;
+    outline: solid 2px black;
+}
+
+.file input.disabled{
+    background: transparent;
+    text-align: center;
+    border: 0;
+}
+.file img{
+    max-width: 100%;
+}

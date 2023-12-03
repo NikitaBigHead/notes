@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   }
+.Body{
+    display: grid;
+    grid-template-columns: auto 3fr;
+    height:80%
+}
+.App{
+    height: 100vh;
+}

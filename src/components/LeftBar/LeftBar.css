@@ -1,0 +1,31 @@
+.leftBar{
+    height: auto;
+    background-color: #ffedca;
+    font-size: 2em;
+    overflow-y:scroll;
+    resize:horizontal;
+    padding: 1em;
+    max-width: 40vw;
+    scrollbar-color:  #bca272 #ffe0a8;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+.navElement{
+    display: flex;
+    padding: 0.5em 0.25em;
+    margin: 0 0.25em;
+
+}
+.navElement:hover{
+    display: flex;
+    padding: 0.5em 0.25em;
+    background-color:rgb(248, 107, 13);
+    border-radius: 25px;
+    cursor: pointer;
+}
+.navElement img{
+    height:1.25em;
+    margin-right:0.25em ;
+}

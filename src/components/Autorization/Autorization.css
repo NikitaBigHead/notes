@@ -1,0 +1,89 @@
+.autorization_form_container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+
+    pointer-events: none;
+    opacity: 0;
+    z-index: 999;
+}
+.autorization_form_container.active {
+    pointer-events: all;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.autorization_form_content {
+    padding: 1em;
+    background-color: aliceblue;
+    width: 50%;
+    min-height: max-content;
+    border-radius: 12px;
+
+    transform: scale(0.5);
+    transition: 2s all;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.autorization_form_content.active {
+    transform: scale(1);
+}
+.autorization_form_content form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6em;
+    margin: 0 auto;
+    width: 60%;
+}
+.autorization_input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0.5em 0;
+}
+
+.autorization_input * {
+    height: 1.5em;
+}
+.autorization_input span {
+    width: 40%;
+}
+.autorization_input input[type="text"] {
+    width: 60%;
+    height: 2em;
+    font-size: 1em;
+}
+.autorization_input input[type="password"] {
+    width: 60%;
+    height: 2em;
+    font-size: 1em;
+}
+
+.autorization_input input[type="checkbox"] {
+    height: 2em;
+    width: 2em;
+}
+.autorization_buttons * {
+    margin-right: 1em;
+    padding: 0.25em;
+    font-size: 1em;
+}
+
+.warning {
+    color: red;
+    display: none;
+}
+
+.warning.active {
+    display: block;
+}

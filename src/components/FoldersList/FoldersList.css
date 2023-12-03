@@ -1,0 +1,57 @@
+.foldersList{
+    margin-top: 1em;
+}
+
+.foldersListLogo{
+    padding: 0.5em 0;
+}
+
+.folderElementList{
+    padding: 0.5em 0.25em;
+    display: flex;
+    align-items: center;
+}
+
+.folderElementList:hover{
+    padding: 0.5em 0.25em;
+    background-color: rgb(248, 107, 13);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.folderElementList img{
+    height:1.25em;
+    margin-right:0.25em ;
+}
+
+.folderElementList:hover img{
+    height:1.25em;
+    margin-right:0.25em ;
+    cursor: pointer;
+    content: url('../../images/folder.png');
+}
+
+.currentFolder{
+    display: flex;
+}
+
+.currentFolder img{
+    margin-right:0.25em ;
+    padding: 0.5em;
+    height:2em;
+}
+
+.currentFolder img:hover{
+    height:2em;
+    margin-right:0.25em ;
+    background-color: #f86b0d;
+    border-radius: 25%;
+    padding: 0.5em;
+    cursor: pointer;
+    
+}
+.foldersDir{
+    display: flex;
+    flex-direction: column;
+
+}
